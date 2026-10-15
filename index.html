@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b55">
+  <title>SS Result Portal | BISE Bahawalpur</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">SS</div>
+      <div>
+        <h2>SS RESULT PORTAL</h2>
+        <p>Your Results, One Place</p>
+      </div>
+    </div>
+    <span class="demo-badge">DEMO PORTAL</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">STUDENT RESULT SERVICES</span>
+      <h1>Your Academic Journey,<br><span>One Result at a Time.</span></h1>
+      <p>Search your examination result with a simple and clean experience.</p>
+    </section>
+
+    <section class="search-card">
+      <div class="card-heading">
+        <div class="heading-icon">↗</div>
+        <div>
+          <h2>Check Your Result</h2>
+          <p>Enter your details to continue</p>
+        </div>
+      </div>
+
+      <form id="resultForm">
+        <label for="board">Education Board</label>
+        <select id="board" required>
+          <option value="bwp">BISE Bahawalpur</option>
+        </select>
+
+        <label for="roll">Roll Number</label>
+        <input id="roll" type="text" inputmode="numeric"
+          placeholder="Enter your roll number" required>
+
+        <div class="form-row">
+          <div>
+            <label for="className">Class</label>
+            <select id="className" required>
+              <option value="10th">10th Class</option>
+              <option value="9th">9th Class</option>
+              <option value="12th">12th Class</option>
+              <option value="11th">11th Class</option>
+            </select>
+          </div>
+          <div>
+            <label for="year">Exam Year</label>
+            <select id="year" required>
+              <option value="2026">2026</option>
+              <option value="2025">2025</option>
+              <option value="2024">2024</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit">Search Demo Result <span>→</span></button>
+        <p id="message" role="status"></p>
+      </form>
+<section id="resultCard" class="result-card" hidden>
+  <div class="result-card-header">
+    <h2>Student Result Card</h2>
+    <p>SS Result Portal — Demo Result</p>
+  </div>
+
+  <div class="student-details">
+    <p>Student Name: <strong id="studentName">-</strong></p>
+    <p>Roll Number: <strong id="resultRoll">-</strong></p>
+    <p>Board: <strong id="resultBoard">-</strong></p>
+    <p>Class: <strong id="resultClass">-</strong></p>
+    <p>Exam Year: <strong id="resultYear">-</strong></p>
+  </div>
+
+  <h3>Subject-wise Marks</h3>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+<th>Subject</th>
+<th>Obtained</th>
+<th>Total</th>
+<th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="subjectMarks">
+      </tbody>
+    </table>
+  </div>
+
+  <div class="result-summary">
+    <p>Total Marks: <strong id="totalMarks">-</strong></p>
+    <p>Obtained Marks: <strong id="obtainedMarks">-</strong></p>
+    <p>Percentage: <strong id="percentage">-</strong></p>
+    <p>Result Status: <strong id="resultStatus">-</strong></p>
+  </div>
+
+  <p class="demo-note">
+    This is a sample result, not an official board result.
+  </p>
+  <button id="printResult" type="button" onclick="window.print()">
+    Print Result
+  </button>
+</section>
+      <div class="notice">
+        <strong>Demo website</strong>
+        <p>This portal is a student project. Results shown here will be sample data, not official board records.</p>
+      </div>
+    </section>
+
+    <section class="features">
+      <div><span>01</span><h3>Easy Search</h3><p>Simple result lookup</p></div>
+      <div><span>02</span><h3>Clear Marks</h3><p>Subject-wise details</p></div>
+      <div><span>03</span><h3>Print Ready</h3><p>Result card layout</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 SS Result Portal</p>
+    <p>Independent student project · Not an official board website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+zxz
