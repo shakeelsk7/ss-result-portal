@@ -435,3 +435,84 @@ footer {
     display: block !important;
   }
 }
+
+/* Final responsive polish */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-wrap: anywhere;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  max-width: 100%;
+}
+
+button,
+input,
+select {
+  min-height: 44px;
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+  outline: 3px solid #8bb8ff;
+  outline-offset: 2px;
+}
+
+.result-card {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 36px 8px 26px;
+  }
+
+  main {
+    width: calc(100% - 24px);
+  }
+
+  .result-card table {
+    font-size: 13px;
+  }
+
+  .result-card th,
+  .result-card td {
+    padding: 9px 6px;
+    overflow-wrap: anywhere;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
